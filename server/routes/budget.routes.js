@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { pool } from "../../database/db.js";
+import { pool } from "../db.js";
 
 //Controllers
 import {hello} from "../controllers/budget.controllers.js"

@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { pool } from "../../database/db.js";
+import { pool } from "../db.js";
 
 //Initialize Router
 const router = Router();
@@ -10,7 +10,7 @@ router.get("/structure", async (req, res) => {
     const [results, fields, err] = await pool.query("SELECT * FROM users"); //Results, Fields, Err
     res.json(results);
   } catch (error) {
-    console.log(error);
+    return res.status(500).json({message: error.message});
   }
 });
 

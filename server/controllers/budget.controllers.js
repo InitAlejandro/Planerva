@@ -6,5 +6,4 @@ const hello = async (req, res) => {
         console.log(error)
     }
 }
-
-export {hello}  
+export {hello}
