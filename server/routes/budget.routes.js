@@ -8,6 +8,9 @@ import {hello} from "../controllers/budget.controllers.js"
 const router = Router()
 
 //Routes
-router.get("/hello", hello);
+router.get("/task", hello);
+// router.post();
+// router.delete();
+// router.update();
 
 export default router
