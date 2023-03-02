@@ -7,6 +7,7 @@ import budgetRoutes from "./routes/budget.routes.js";
 const app = express();
 
 //Seetings
+app.use(express.json()) //Body Parser
 
 //Middlewares
 
